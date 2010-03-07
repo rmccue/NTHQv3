@@ -1,0 +1,373 @@
+body {
+	background: black url("resources/backgrounds/rotate.php") no-repeat bottom;
+	color: #ddd;
+	font: 16px/1.5 Arial, sans-serif;
+	padding-bottom: 937px;
+}
+a {
+	/*color: #ccc;*/
+	color: orange;
+	text-decoration: none;
+}
+	a:hover {
+		/*color: #eee;*/
+		color: orange;
+		border-bottom: 1px solid;
+	}
+
+/* Simple Grid */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8 {
+	float: left;
+	margin: 0 2%;
+}
+.col-1 { width: 8.5%; }
+.col-2 { width: 21%; }
+.col-3 { width: 33.5% }
+.col-4 { width: 46%; }
+.col-5 { width: 58.5% }
+.col-6 { width: 71%; }
+.col-7 { width: 83.5%; }
+.col-8 { width: 96%; }
+
+
+.clearer {
+	clear: both;
+	line-height: 1px;
+	height: 1px;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#notice {
+	text-align: center;
+	margin: 10px 0;
+}
+
+#header {
+	padding: 10px 12px 0;
+	position: relative;
+}
+	#header h1 {
+		font: 36px/107px Arial;
+		background: url("resources/logo.png") no-repeat center;
+		width: 100%;
+	}
+		#header h1 a {
+			display: block;
+			height: 100%;
+			width: 100%;
+			text-indent: -9999px;
+		}
+			#header h1 a:hover {
+				border: none;
+			}
+
+#navigation {
+	padding: 0 10px;
+	margin: 0 0 10px;
+	text-align: center;
+	width: 100%;
+}
+	#navigation ul {
+		position: relative;
+		left: 50%;
+		float: left;
+	}
+		#navigation li {
+			float: left;
+			margin-right: 20px;
+			position: relative;
+			right: 50%;
+		}
+			#navigation a {
+				color: #fff;
+				line-height: 45px;
+				text-transform: none;
+				text-decoration: none;
+				border-bottom: 3px solid #000;
+				padding-bottom: 2px;
+			}
+				#navigation a:hover {
+					border-bottom: 3px solid #fff;
+				}
+			#navigation #download a {
+				font-size: 30px;
+			}
+
+#content {
+	background: #222;
+	color: #999;
+	padding: 10px 20px;
+}
+	#content h1, #content h2, #content h3, #content h4 {
+		/*font-family: Georgia, serif;*/
+		color: #ccc;
+	}
+		/* Never use this, H1 is for page titles only */
+		#content h1 {
+			color: red;
+			text-decoration: strikethrough;
+		}
+		#content h2 { font-size: 22px; }
+		#content h3 { font-size: 18px; }
+		#content h4 { font-size: 16px; text-transform: uppercase; }
+	#content p, #content blockquote, #content ul, #content ol, #content dl, #content img {
+		margin-bottom: 12px;
+	}
+		#content p img {
+			margin-bottom: 0;
+		}
+		#content dl {
+		
+		}
+			#content dt {
+				text-transform: uppercase;
+				font-size: 15px;
+				letter-spacing: -1px;
+				font-weight: bold;
+			}
+			#content dd {
+				margin-left: 20px;
+			}
+		#content ul {
+			list-style-type: disc;
+		}
+		#content ol {
+			list-style-type: decimal;
+		}
+			#content li {
+				margin-left: 20px;
+			}
+	#content strong {
+		font-weight: bold;
+		color: orange;
+	}
+	#content em {
+		font-style: italic;
+	}
+
+#footer {
+	width: 960px;
+	margin: 0 auto;
+	border-top: 1px solid #333;
+	padding: 20px 0;
+	margin-top: 20px;
+
+	color: #666;
+}
+	#footer ul {
+		/* 4 * 42 + 54 + 100 + 6 * 10 */
+		width: 382px;
+		margin: 0 auto;
+	}
+	#footer li {
+		float: left;
+		margin-right: 10px;
+	}
+	#footer p {
+		clear: both;
+		text-align: center;
+		margin-top: 20px;
+	}
+	#footer a {
+		color: #777;
+	}
+
+/* HOME PAGE */
+#video {
+	width: 852px;
+	height: 480px;
+	margin: 0 auto 20px;
+}
+
+#trailer-download {
+	text-align: center;
+	font-size: 12px;
+}
+
+#blog .subtitle {
+	font-size: 14px;
+}
+#blog .col-3 {
+	width: 21%;
+	margin-left: 14.5%;
+}
+#blog ul {
+	list-style-type: none;
+}
+	#blog li {
+		margin-left: 0;
+	}
+
+#friends {
+	text-align: center;
+}
+	#friends .col-4 {
+		margin-bottom: 30px;
+	}
+		#friends .col-4 a {
+			display: block;
+			width: 100%;
+			padding-top: 90px;
+			background: transparent no-repeat center 10px;
+		}
+			#friends .col-4 a:hover {
+				border: none;
+				background-color: #333;
+			}
+		#friends #zps a { background-image: url("resources/links/zps.jpg"); }
+		#friends #dystopia a { background-image: url("resources/links/dystopia.jpg"); }
+		#friends #ins a { background-image: url("resources/links/ins.jpg"); }
+		#friends #aoc a { background-image: url("resources/links/aoc.jpg"); }
+
+/* DOWNLOAD PAGE */
+#download-instructions {
+	text-align: center;
+}
+	#download-instructions h2 {
+		margin-bottom: 10px;
+	}
+	#download-instructions .col {
+		width: 29%;
+		float: left;
+		margin: 0 2% 10px;
+	}
+		#download-instructions .col a {
+			display: block;
+			font-size: 26px;
+			border-bottom: 1px solid transparent;
+		}
+			#download-instructions .col a:hover {
+				border-bottom: 1px solid;
+			}
+#other-instructions {
+}
+
+/* Mirrors appear in a colorbox div */
+#cboxContent a {
+	color: #666;
+}
+#cboxContent ul {
+	list-style-type: disc;
+}
+	#cboxContent li {
+		margin-left: 20px;
+	}
+
+.block {
+	border-top: 1px solid #666;
+	padding-top: 15px;
+	margin-top: 15px;
+}
+
+/* HOW TO PLAY PAGE */
+
+#classes {
+	width: 700px;
+	margin: 0 auto;
+}
+	#classes h3 {
+		text-align: center;
+	}
+
+#primary-weapons .weapon {
+	margin-left: 140px;
+	margin-top: 20px;
+	min-height: 100px;
+	clear: both;
+}
+	#primary-weapons .weapon img {
+		float: left;
+		margin-left: -140px;
+	}
+
+#secondary-weapons .weapon {
+	margin-left: 200px;
+	margin-top: 20px;
+	min-height: 100px;
+	clear: both;
+}
+	#secondary-weapons .weapon img {
+		float: left;
+		margin-left: -200px;
+	}
+
+/* ABOUT PAGE */
+#team {
+
+}
+	#team p {
+		text-align: center;
+	}
+		#team .col-4 p {
+			text-align: left;
+		}
+
+/* MEDIA PAGE */
+#maps ul, #weapons ul, #models ul {
+	list-style-type: none;
+}
+	#maps li, #weapons li, #models li {
+		float: left;
+	}
+
+/* MAP PAGES */
+#map-images .image {
+	margin-left: -175px;
+}
+
+/* BLOG PAGE */
+.blog-post {
+
+}
+	.blog-post .subtitle {
+		font-size: 14px;
+	}
+		.blog-post .subtitle a {
+			color: #bbb;
+		}
+
+
+/* COLORBOX STYLES */
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:visible;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+#cboxOverlay{background:#000;}
+
+#colorbox{}
+    #cboxTopLeft{width:14px; height:14px; background:url("resources/colorbox/controls.png") 0 0 no-repeat;}
+    #cboxTopCenter{height:14px; background:url("resources/colorbox/border.png") top left repeat-x;}
+    #cboxTopRight{width:14px; height:14px; background:url("resources/colorbox/controls.png") -36px 0 no-repeat;}
+    #cboxBottomLeft{width:14px; height:43px; background:url("resources/colorbox/controls.png") 0 -32px no-repeat;}
+    #cboxBottomCenter{height:43px; background:url("resources/colorbox/border.png") bottom left repeat-x;}
+    #cboxBottomRight{width:14px; height:43px; background:url("resources/colorbox/controls.png") -36px -32px no-repeat;}
+    #cboxMiddleLeft{width:14px; background:url("resources/colorbox/controls.png") -175px 0 repeat-y;}
+    #cboxMiddleRight{width:14px; background:url("resources/colorbox/controls.png") -211px 0 repeat-y;}
+    #cboxContent{background:#fff; color: #333;}
+        #cboxLoadedContent{margin-bottom:5px;}
+        #cboxLoadingOverlay{background:url("resources/colorbox/loading_background.png") center center no-repeat;}
+        #cboxLoadingGraphic{background:url("resources/colorbox/loading.gif") center center no-repeat;}
+        #cboxTitle{position:absolute; bottom:-25px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C;}
+        #cboxCurrent{position:absolute; bottom:-25px; left:58px; font-weight:bold; color:#7C7C7C;}
+        
+        #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{position:absolute; bottom:-29px; background:url("resources/colorbox/controls.png") 0px 0px no-repeat; width:23px; height:23px; text-indent:-9999px;}
+        #cboxPrevious{left:0px; background-position: -51px -25px;}
+        #cboxPrevious.hover{background-position:-51px 0px;}
+        #cboxNext{left:27px; background-position:-75px -25px;}
+        #cboxNext.hover{background-position:-75px 0px;}
+        #cboxClose{right:0; background-position:-100px -25px;}
+        #cboxClose.hover{background-position:-100px 0px;}
+        
+        .cboxSlideshow_on #cboxSlideshow{background-position:-125px 0px; right:27px;}
+        .cboxSlideshow_on #cboxSlideshow.hover{background-position:-150px 0px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-150px -25px; right:27px;}
+        .cboxSlideshow_off #cboxSlideshow.hover{background-position:-125px 0px;}
