@@ -1,6 +1,7 @@
-		<div id="primary" class="widget-area">
+<?php if ( !is_page() ): //begin is_page ?>
+		<div id="sidebar">
 			<ul class="xoxo">
-<?php if ( !dynamic_sidebar('primary-widget-area') ) : // begin primary widget area ?>
+<?php if ( !dynamic_sidebar('sidebar') ) : // begin sidebar ?>
 			<li id="search" class="widget-container widget_search">
 				<?php get_search_form(); ?>
 			</li>
@@ -20,14 +21,7 @@
 					<?php wp_meta(); ?>
 				</ul>
 			</li>
-<?php endif; // end primary widget area ?>
+<?php endif; // end sidebar ?>
 			</ul>
-		</div><!-- #primary .widget-area -->
-
-<?php if ( is_active_sidebar('secondary-widget-area') ) : // Nothing here by default and design ?>
-		<div id="secondary" class="widget-area">
-			<ul class="xoxo">
-				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
-			</ul>
-		</div><!-- #secondary .widget-area -->
-<?php endif; ?>
+		</div><!-- #sidebar -->
+<?php endif; //end is_page
