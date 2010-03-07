@@ -163,7 +163,7 @@ a {
 		/* Never use this, H1 is for page titles only */
 		#content h1 {
 			color: red;
-			text-decoration: strikethrough;
+			text-decoration: line-through;
 		}
 		#content h2 { font-size: 22px; }
 		#content h3 { font-size: 18px; }
