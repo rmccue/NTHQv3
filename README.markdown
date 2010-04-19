@@ -19,18 +19,18 @@ correctly.)
    WordPress was installed in the `wordpress/` directory, this file would
    be `wordpress/wp-content/themes/nthqv3/README.markdown`
 2. Import pages from `pages.wxr.xml` (included in this directory).
-    a. Open your WordPress administration panel.
-	b. Go to Tools, then import.
-	c. Choose the WordPress importer.
-	d. Select `pages.wxr.xml` from your computer.
+    1. Open your WordPress administration panel.
+	2. Go to Tools, then import.
+	3. Choose the WordPress importer.
+	4. Select `pages.wxr.xml` from your computer.
 3. Create the navigation menu.
-	a. Go to Appearance, then Menus in the administration panel.
-	b. Create links to "About", "News", "Community", "Download", "Playing",
+	1. Go to Appearance, then Menus in the administration panel.
+	2. Create links to "About", "News", "Community", "Download", "Playing",
 	   "Media" and "Soundtrack".
-	c. Save.
-	d. Click the Edit link for the "Download" item, and set the custom class
+	3. Save.
+	4. Click the Edit link for the "Download" item, and set the custom class
 	   to `download`
-	e. Save.
+	5. Save.
 4. You *should* now be done. I might have forgotten something here, so contact
    me once you get to this stage so I can check.
 
