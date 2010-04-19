@@ -1,4 +1,12 @@
 /*
+Theme Name: NeoTokyo HQ
+Theme URI: http://neotokyohq.com/
+Description: The new theme for NeoTokyo HQ.
+Author: Ryan McCue
+Version: 3.0
+*/
+
+/*
 	From http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
 */
 html, body, div, span, applet, object, iframe,
@@ -147,7 +155,7 @@ a {
 				#navigation a:hover {
 					border-bottom: 3px solid #fff;
 				}
-			#navigation #download a {
+			#navigation .download a {
 				font-size: 30px;
 			}
 

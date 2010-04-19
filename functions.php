@@ -154,8 +154,8 @@ function twentyten_term_list($taxonomy, $glue = ', ', $text = '', $also_text = '
 endif;
 
 // Register widgetized areas
-if ( ! function_exists( 'twentyten_widgets_init' ) ) :
-function twentyten_widgets_init() {
+if ( ! function_exists( 'nthq_widgets_init' ) ) :
+function nthq_widgets_init() {
 	// Area 1
 	register_sidebar( array (
 		'name' => 'Sidebar',
@@ -169,28 +169,17 @@ function twentyten_widgets_init() {
 
 	// Area 2
 	register_sidebar( array (
-		'name' => 'Secondary Widget Area',
-		'id' => 'secondary-widget-area',
-		'description' => __( 'The secondary widget area' , 'twentyten' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => "</li>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 3
-	register_sidebar( array (
-		'name' => 'First Footer Widget Area',
-		'id' => 'first-footer-widget-area',
-		'description' => __( 'The first footer widget area' , 'twentyten' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => "</li>",
-		'before_title' => '<h3 class="widget-title">',
+		'name' => 'Notice',
+		'id' => 'notice',
+		'description' => __( 'Notice area' , 'nthq' ),
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h3 class="notice-title">',
 		'after_title' => '</h3>',
 	) );
 }
 endif;
-add_action( 'init', 'twentyten_widgets_init' );
+add_action( 'init', 'nthq_widgets_init' );
 
 function latest_post_shortcode() {
 	$post = get_posts('numberposts=1&orderby=date');
@@ -215,3 +204,8 @@ function stylesheetdir_shortcode() {
     return get_bloginfo('stylesheet_directory');
 }
 add_shortcode('stylesheetdir', 'stylesheetdir_shortcode');
+
+function blogurl_shortcode() {
+    return get_bloginfo('url');
+}
+add_shortcode('blogurl', 'blogurl_shortcode');

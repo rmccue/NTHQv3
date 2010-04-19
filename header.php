@@ -31,7 +31,7 @@
 			<h1><a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- #header -->
 		<div id="notice">
-			<p>Show your support by <a href="#">voting for NeoTokyo in the Mod DB Top 100</a>.</p>
+			<?php dynamic_sidebar('notice') ?>
 		</div>
 
 		<div id="navigation">
